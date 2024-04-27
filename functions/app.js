@@ -10,7 +10,7 @@ const ttRoutes = require("../tt/ttRoutes");
 app.get("/.netlify/functions/app", (req, res) => {
   res.send({ message: "Bienvenue sur l'application baiboly-gasy" });
 });
-app.use("/.netlify/functions/app/testameta/vaovao", tvRoutes);
-app.use("/.netlify/functions/app/testameta/taloha", ttRoutes);
+app.use("/.netlify/functions/app/testameta_vaovao", tvRoutes);
+app.use("/.netlify/functions/app/testameta_taloha", ttRoutes);
 
 module.exports.handler = serverless(app);

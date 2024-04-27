@@ -5,7 +5,7 @@ const path = require("path");
 //LOCAL
 // const tt = path.join(__dirname, "..", "Testameta taloha");
 //Netlify
-const tt = path.join(__dirname, "..", "testameta taloha");
+const tt = path.join(__dirname, "..", "testameta_taloha");
 
 const router = require("express").Router();
 

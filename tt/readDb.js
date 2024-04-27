@@ -4,10 +4,8 @@ module.exports.readDb = (req, res) => {
   let { ecrivain, toko, andininy, farany } = req.params;
 
   const ecrivainLowerCase = ecrivain.toLowerCase();
-  //PATH LOCAL
-  // const filepath = `${__dirname}/../Testameta vaovao/${ecrivainLowerCase}.json`;
-  //PATH POUR NETLIFY
-  const filepath = `${__dirname}/../testameta taloha/${ecrivainLowerCase}.json`;
+
+  const filepath = `${__dirname}/../testameta_taloha/${ecrivainLowerCase}.json`;
 
   // lecture des db .json
   fs.access(filepath, fs.constants.F_OK, err => {
