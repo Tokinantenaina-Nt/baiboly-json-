@@ -16,7 +16,7 @@ function mpanoratra(boky, req, res) {
       return path.parse(fichier).name;
     });
 
-    return res.status(200).send({ mpanoratra });
+    return res.status(200).json({ mpanoratra });
   });
 }
 

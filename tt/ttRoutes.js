@@ -1,6 +1,9 @@
 const mpanoratra = require("../mpanoratra");
 const { readDb } = require("./readDb");
-const tt = "./Testameta taloha";
+const path = require("path");
+
+const tt = path.join(__dirname, "..", "Testameta taloha");
+
 const router = require("express").Router();
 
 router.get("/mpanoratra", (req, res) => {
