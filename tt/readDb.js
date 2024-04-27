@@ -48,9 +48,11 @@ module.exports.readDb = (req, res) => {
 
         const faranyRendu = parseInt(farany) > andininy ? " - " + farany : "";
 
+        const resultRendu = result.join("");
+
         if ([result].toString() != "") {
           res.json({
-            message: `${ecrivain} ${toko} : ${andininyRendu} ${faranyRendu} : ${result}`
+            message: `${ecrivain} ${toko} : ${andininyRendu} ${faranyRendu} : ${resultRendu}`
           });
         } else {
           res.status(404).json({
