@@ -1,11 +1,17 @@
 const fs = require("fs");
+const path = require("path");
 
 module.exports.readDb = (req, res) => {
   let { ecrivain, toko, andininy, farany } = req.params;
 
   const ecrivainLowerCase = ecrivain.toLowerCase();
 
-  const filepath = `${__dirname}/../testameta_taloha/${ecrivainLowerCase}.json`;
+  const filepath = path.join(
+    __dirname,
+    "..",
+    "testameta_taloha",
+    `${ecrivainLowerCase}.json`
+  );
 
   // lecture des db .json
   fs.access(filepath, fs.constants.F_OK, err => {
