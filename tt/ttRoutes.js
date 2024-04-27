@@ -6,6 +6,6 @@ const router = require("express").Router();
 router.get("/mpanoratra", (req, res) => {
   mpanoratra(tt, req, res);
 });
-router.get("/:ecrivain/:toko?/:andininy?/:farany?", readDb);
+router.get("/boky/:ecrivain/:toko?/:andininy?/:farany?", readDb);
 
 module.exports = router;
