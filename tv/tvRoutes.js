@@ -3,7 +3,10 @@ const { readDb } = require("./readDb");
 const path = require("path");
 
 const router = require("express").Router();
-const tv = path.join(__dirname, "..", "Testameta vaovao");
+//LOCAL
+// const tv = path.join(__dirname, "..", "Testameta vaovao");
+//Netlify
+const tv = path.join(__dirname, "..", "testameta vaovao");
 
 router.get("/mpanoratra", (req, res) => {
   mpanoratra(tv, req, res);

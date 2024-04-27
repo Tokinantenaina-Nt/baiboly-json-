@@ -2,7 +2,10 @@ const mpanoratra = require("../mpanoratra");
 const { readDb } = require("./readDb");
 const path = require("path");
 
-const tt = path.join(__dirname, "..", "Testameta taloha");
+//LOCAL
+// const tt = path.join(__dirname, "..", "Testameta taloha");
+//Netlify
+const tt = path.join(__dirname, "..", "testameta taloha");
 
 const router = require("express").Router();
 
