@@ -20,6 +20,7 @@ module.exports.readDb = (req, res) => {
       return res.status(404).json({
         message: "Hamarino Ny mpanoratra ()",
         err: err,
+        path: `${filepath}`,
         dirname: `${__dirname}`
       });
     }
