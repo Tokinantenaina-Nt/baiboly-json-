@@ -12,38 +12,17 @@ module.exports.readDb = (req, res) => {
     "testameta_taloha",
     `${ecrivainLowerCase}.json`
   );
+  const fs = require("fs");
+  const path = require("path");
 
   exports.handler = () => {
-    const directoryPath = "../testameta_taloha";
-
-    try {
-      const files = fs.readdirSync(directoryPath);
-      const data = [];
-
-      files.forEach(file => {
-        const filePath = path.join(directoryPath, file);
-        const fileData = JSON.parse(fs.readFileSync(filePath, "utf8"));
-        data.push(fileData);
-      });
-
-      return {
-        statusCode: 200,
-        body: JSON.stringify(data),
-        headers: {
-          "Content-Type": "application/json"
-        }
-      };
-    } catch (error) {
-      return {
-        statusCode: 500,
-        body: JSON.stringify({
-          message: "Erreur lors de la lecture des fichiers JSON."
-        }),
-        headers: {
-          "Content-Type": "application/json"
-        }
-      };
-    }
+    return {
+      statusCode: 200,
+      body: JSON.stringify(filepath),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    };
   };
 
   // lecture des db .json
