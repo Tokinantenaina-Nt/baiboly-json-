@@ -16,7 +16,13 @@ module.exports.readDb = (req, res) => {
   // lecture des db .json
   fs.access(filepath, fs.constants.F_OK, err => {
     if (err) {
-      return res.status(404).json({ message: "Hamarino Ny mpanoratra ()", err: err });
+      return res
+        .status(404)
+        .json({
+          message: "Hamarino Ny mpanoratra ()",
+          err: err,
+          dirname: `${__dirname}`
+        });
     }
 
     fs.readFile(filepath, "utf8", (err, data) => {
