@@ -12,8 +12,6 @@ module.exports.readDb = (req, res) => {
     "testameta_taloha",
     `${ecrivainLowerCase}.json`
   );
-  const fs = require("fs");
-  const path = require("path");
 
   exports.handler = () => {
     return {
