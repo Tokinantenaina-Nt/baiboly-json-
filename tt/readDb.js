@@ -8,7 +8,6 @@ module.exports.readDb = (req, res) => {
 
   const filepath = path.join(
     __dirname,
-    "tt",
     "..",
     "testameta_taloha",
     `${ecrivainLowerCase}.json`
