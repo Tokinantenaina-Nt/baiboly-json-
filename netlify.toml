@@ -1,4 +1,4 @@
 [build]
   functions = "functions"
 [functions]
-  included_files = ["testameta_vavao/**", "testameta_taloha/**"]
+  included_files = ["testameta_vaovao/**", "testameta_taloha/**"]
