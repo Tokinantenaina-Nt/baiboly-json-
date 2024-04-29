@@ -2,8 +2,9 @@ const mpanoratra = require("../mpanoratra");
 const { readDb } = require("./readDb");
 const path = require("path");
 
-const router = require("express").Router();
 const tv = path.join(__dirname, "..", "testameta_vaovao");
+
+const router = require("express").Router();
 
 router.get("/mpanoratra", (req, res) => {
   mpanoratra(tv, req, res);
