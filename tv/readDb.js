@@ -12,7 +12,6 @@ module.exports.readDb = (req, res) => {
     `${ecrivainLowerCase}.json`
   );
 
-  console.log(filepath);
   // lecture des db .json
   fs.access(filepath, fs.constants.F_OK, err => {
     if (err) {

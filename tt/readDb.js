@@ -5,7 +5,6 @@ module.exports.readDb = (req, res) => {
   let { ecrivain, toko, andininy, farany } = req.params;
 
   const ecrivainLowerCase = ecrivain.toLowerCase();
-
   const filepath = path.join(
     __dirname,
     "..",
@@ -13,20 +12,9 @@ module.exports.readDb = (req, res) => {
     `${ecrivainLowerCase}.json`
   );
 
-  exports.handler = () => {
-    return {
-      statusCode: 200,
-      body: JSON.stringify(filepath),
-      headers: {
-        "Content-Type": "application/json"
-      }
-    };
-  };
-
   // lecture des db .json
 
   fs.readFile(filepath, "utf8", async (err, data) => {
-    console.log(data);
     if (!data) {
       return res.status(404).json({ message: "Hamarino Ny mpanoratra ()" });
     }
