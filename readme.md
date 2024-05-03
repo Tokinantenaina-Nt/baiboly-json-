@@ -15,3 +15,15 @@ Ny baiboly json dia tenin'Andriamanitra "_en format Json_" izay mirakitra 66 bok
 @RaveloMevaSoavina Juillet 2021
 
 Avril 2024 : Fork by Tokinantenaina-nt + création de l'Api 'get'
+endpoint : 
+Mpanoratra Testameta Vaovavo :
+https://baiboly-gasy.netlify.app/.netlify/functions/app/testameta_vaovao/mpanoratra
+
+Mpanoratra Tesstameta Taloha :
+https://baiboly-gasy.netlify.app/.netlify/functions/app/testameta_taloha/mpanoratra
+
+MITADY TOKO SY ANDININY TV : 
+https://baiboly-gasy.netlify.app/.netlify/functions/app/testameta_vaovao/boky/:mpanoratra/:toko/:andniny/:farany?
+
+MITADY TOKO SY ANDININY TT : 
+https://baiboly-gasy.netlify.app/.netlify/functions/app/testameta_vaovao/boky/:ecrivain/:toko/:andniny/:farany?
